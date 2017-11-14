@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html >
+	<head>
+	  <meta charset="UTF-8">
+	  <title>Portfolio</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  
+	  <link rel='stylesheet prefetch' href='https://www.w3schools.com/lib/w3.css'>
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
+
+		  <link rel="stylesheet" href="css/style.css">
+
+	  
+	</head>
+
+	<body>
+		  <!-- Author: Christian Pecson -->
+		<!-- Date: July 2, 2016 -->
+		<!-- Navbar (sit on top) -->
+		<div class="w3-top">
+		  <ul class="w3-navbar" id="myNavbar">
+			<li><a href="#" class="w3-padding-large">Stanislas PERIGAUD</a></li>
+			<li class="w3-hide-small w3-right">
+			  <a href="#contact" class="w3-padding-large">Contact</a>
+			</li>
+			<li class="w3-hide-small w3-right">
+			  <a href="#portfolio" class="w3-padding-large">Portfolio</a>
+			</li>
+			<li class="w3-hide-small w3-right">
+			  <a href="PERIGAUD Stanislas - CV.pdf" class="w3-padding-large">CV</a>
+			</li>
+		  </ul>
+		</div>
+
+		<!-- First Parallax Image with Logo Text -->
+		<div class="bgimg-1 w3-opacity w3-display-container">
+		  <div class="w3-display-middle" style="white-space:nowrap;">
+			<h1 class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity"> <span class="w3-hide-small">PORTFOLIO</span></h1>
+		  </div>
+		</div>
+
+		<!-- Container (About Section) -->
+		<center>
+		<div class="w3-content w3-container w3-padding-64" id="about">
+		  <h2 class="w3-center">A PROPOS DE MOI</h2>
+		  <p class="w3-center"><em>J'adore la programmation et les Jeux Video</em></p>
+		  <p>Je suis Stanislas PERIGAUD. Je suis en BTS SIO option SLAM(Solution Logiciel et Application Métier)</p>
+		  <!--  Profile Picture and Description  -->
+		  <div class="w3-row">
+			<div class="w3-col m6 w3-center w3-section">
+			  <img src="moi.jpg" id="profile" class="w3-circle" alt="Photo of Me">
+			</div>
+		  </div>
+		</div>
+		</center>
+		<!-- Second Parallax Image with Portfolio Text -->
+		<div class="bgimg-2 w3-display-container" id="portfolio">
+		  <div class="w3-display-middle">
+			<span class="w3-xxlarge w3-text-light-grey w3-wide">PORTFOLIO</span>
+		  </div>
+		</div>
+
+		<!-- Container (Portfolio Section) -->
+		<div class="w3-content w3-container w3-padding-64">
+		  <h2 class="w3-center">Mes Sites</h2>
+			<br>
+		  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+		  <div class="w3-row-padding w3-center">
+			<div class="w3-col m3">
+			  <img src="Site 2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+			</div>
+
+			<div class="w3-col m3">
+			  <img src="Site3.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+			</div>
+
+			<div class="w3-col m3">
+			  <img src="Site4.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+			</div>
+
+			<div class="w3-col m3">
+			  <img src="Hermanos.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+			</div>
+		  </div>
+		</div>
+
+		<!-- Permet d'agrandir les images quand t on click-->
+		<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+		  <span class="w3-closebtn w3-hover-red w3-text-white w3-xxxlarge w3-container w3-display-topright">×</span>
+		  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+			<img id="img01" style="max-width:100%">
+		  </div>
+		</div>
+
+		<!-- Third Parallax Image with Portfolio Text -->
+		<div class="bgimg-3 w3-display-container" id="contact">
+		  <div class="w3-display-middle">
+			<h2 class="w3-xxlarge w3-text-light-grey w3-wide">CONTACT</h2>
+		  </div>
+		</div>
+
+		<!-- Container (Contact Section) -->	
+		<center>
+		<div class="w3-content w3-container w3-padding-64">
+			
+		  <address class="w3-row w3-padding-32 w3-section">
+			<div class="w3-col m8 w3-container w3-section">
+			  <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+				<div class="w3-half">
+				  <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Nom">
+				</div>
+				<div class="w3-half">
+				  <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Email">
+				</div>
+			  </div>
+			  <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Commentaire">
+			  <a href="mailto:christianpecson.io@gmail.com" class="w3-btn w3-section w3-right">Envoyer</a>
+			</div>
+		  </address>
+		</div>
+		<center>
+		<!-- Footer -->
+		<footer class="w3-center w3-dark-grey w3-padding-48 w3-hover-black cf">
+		  <div class="w3-half">
+			<a target="_blank" href="https://www.facebook.com/stanpgd">
+			  <i class="fa fa-facebook fa-2x"></i>
+			</a>
+			<a target="_blank" href="https://linkedin.com/StanislasPerigaud">
+			  <i class="fa fa-codepen fa-2x"></i>
+			</a>
+		  </div>
+		  <p class="w3-half">Creer par <span class="heart-icon"> Stanislas PERIGAUD❤</span></p>
+		</footer>
+
+			<script src="js/index.js"></script>
+
+	</body>
+</html>
